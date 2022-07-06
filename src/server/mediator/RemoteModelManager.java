@@ -1,15 +1,18 @@
-package server.model.classes.mediator;
+package server.mediator;
 
 import server.model.ServerModel;
 
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.ExportException;
 import java.rmi.server.UnicastRemoteObject;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class RemoteModelManager implements RemoteModel {
     private ServerModel serverModel;

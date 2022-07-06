@@ -93,6 +93,7 @@ public class UsersDatabaseManager {
             if (count == 0) {
                 return false;
             }
+            System.out.println("yes it happened");
             return true;
         } catch (Exception e) {
             e.printStackTrace();

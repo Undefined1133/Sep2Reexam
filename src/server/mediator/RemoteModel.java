@@ -1,4 +1,4 @@
-package server.model.classes.mediator;
+package server.mediator;
 
 import java.rmi.Remote;
 

@@ -1,8 +1,9 @@
 package server;
 
 import server.Database.ManagerFactory;
-import server.model.classes.mediator.RemoteModel;
-import server.model.classes.mediator.RemoteModelManager;
+import server.Database.UsersDatabaseManager;
+import server.mediator.RemoteModel;
+import server.mediator.RemoteModelManager;
 import server.model.ServerModel;
 import server.model.ServerModelManager;
 
@@ -13,7 +14,7 @@ public class ServerMain {
     public static void main(String[] args) throws MalformedURLException, RemoteException {
         ServerModel serverModel = new ServerModelManager();
         RemoteModel remoteModel = new RemoteModelManager(serverModel);
-        ManagerFactory managerFactory = new ManagerFactory();
+
 
 
 

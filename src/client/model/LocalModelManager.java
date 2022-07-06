@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 public class LocalModelManager implements ILocalModel {
-    private ClientModelManager clientModel;
+    private ClientModel clientModel;
     public LocalModelManager() throws MalformedURLException, NotBoundException, RemoteException {
      clientModel = new ClientModelManager();
     }
